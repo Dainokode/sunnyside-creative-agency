@@ -1,0 +1,11 @@
+@mixin flex($justify, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin container {
+    width: 90%;
+    margin: auto;
+}

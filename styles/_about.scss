@@ -1,0 +1,42 @@
+#about {
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-1, .about-2 {
+        flex: 1 1 30rem;
+        position: relative;
+
+        p {
+            padding-top: 1rem;
+        }
+
+        .about-text {
+            text-align: center;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 350px){
+    #about {
+        
+        .about-1, .about-2 {
+            .about-text {
+                width: 90%;
+                top: 40%;
+            }
+        }
+    }
+}

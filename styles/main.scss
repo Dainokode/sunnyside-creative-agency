@@ -1,0 +1,82 @@
+// Variables
+$header1: clamp(30px, 3.5vw, 70px);
+$header2: clamp(20px, 3vw, 60px);
+$header3: clamp(18px, 2.5vw, 55px);
+$header4: clamp(16px, 2vw, 50px);
+$header5: clamp(14px, 1.8vw, 45px);
+$paragraph-size: clamp(14px, 1.5vw, 30px);
+$main-color: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate: hsl(168, 34%, 41%);
+$text-color: #525252;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+// basic styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.3;
+    background-color: #fff;
+    color: #333;
+}
+
+h1 {
+    font-size: $header1;
+}
+
+h2 {
+    font-size: $header2;
+}
+
+h3 {
+    font-size: $header3;
+}
+
+h4 {
+    font-size: $header4;
+}
+
+h5 {
+    font-size: $header5;
+}
+
+input, button, p, label, li, a {
+    font-size: $paragraph-size;
+    font-weight: normal;
+    color: $text-color;
+}
+
+p {
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+@import "./utility";
+@import "./navbar";
+@import "./hero";
+@import "./services";
+@import "./about";
+@import "./testimonials";
+@import "./projects";
+@import "./footer";

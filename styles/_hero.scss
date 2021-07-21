@@ -1,0 +1,23 @@
+#hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    .hero-text {
+        margin-top: -15%;
+        text-align: center;
+        @include flex(center, column);
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+        }
+
+        a {
+            margin-top: 18%;
+        }
+    }
+}

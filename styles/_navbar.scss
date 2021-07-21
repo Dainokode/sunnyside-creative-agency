@@ -1,0 +1,104 @@
+#main-header {
+    min-height: 100vh;
+    background: url("/images/desktop/image-header.jpg") no-repeat center center/cover;
+    z-index: 2;
+    position: relative;
+
+    #navbar {
+        min-height: 10vh;
+        display: flex;
+        @include container;
+        padding: 3rem 0;
+        color: #fff;
+    
+        #logo {
+            flex: 2 1 40rem;
+            text-transform: lowercase;
+        }
+        
+        ul {
+            flex: 1 1 40rem;
+            @include flex(space-between, row);
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .contact-btn {
+            padding: 1.5rem 3rem;
+            background: #fff;
+            color: #333;
+            text-transform: uppercase;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.3);
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media(max-width: 815px){
+    
+    #main-header {
+        #navbar {
+    
+            ul {
+                position: fixed;
+                height: 70%;
+                width: 90%;
+                flex-direction: column !important;
+                align-items: center;
+                top: -150%;
+                left: 50%;
+                background: #fff;
+                transition: 0.3s ease-in-out;
+                padding: 5rem;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+    
+            a {
+                color: $text-color !important;
+                font-size: $header2;
+            }
+
+            .contact-btn {
+                background: $yellow;
+            }
+    
+            .burger {
+                display: block;
+                position: relative;
+                cursor: pointer;
+        
+                span {
+                    background: #fff;
+                    padding: 0.2rem 2rem;
+                    margin: 0.5rem 0;
+                    display: block;
+                    transition: 0.4s ease-in-out;
+                }
+            }
+    
+            .nav-open {
+                opacity: 1;
+                top: 50%;
+            }
+        
+            .toggle .line1 {
+                transform: rotateZ(45deg) translateY(300%);
+            }
+            .toggle .line2 {
+                opacity: 0;
+            }
+            .toggle .line3 {
+                transform: rotateZ(-45deg) translateY(-300%);
+            }
+        }
+    }
+}
