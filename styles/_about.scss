@@ -29,13 +29,24 @@
     }
 }
 
-@media(max-width: 350px){
+@media(max-width: 820px){
     #about {
-        min-height: 150vh;
+        min-height: 70vh;
         .about-1, .about-2 {
             .about-text {
                 width: 90%;
-                top: 40%;
+                top: 50%;
+            }
+        }
+    }
+}
+@media(max-width: 400px){
+    #about {
+        min-height: 100vh;
+        .about-1, .about-2 {
+            .about-text {
+                width: 90%;
+                top: 50%;
             }
         }
     }
