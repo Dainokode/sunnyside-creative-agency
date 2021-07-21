@@ -16,6 +16,8 @@ body {
   line-height: 1.3;
   background-color: #fff;
   color: #333;
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
 }
 
 h1 {
@@ -54,6 +56,24 @@ li {
 
 a {
   text-decoration: none;
+}
+
+@-webkit-keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #main-header {
