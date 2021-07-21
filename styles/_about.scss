@@ -31,7 +31,7 @@
 
 @media(max-width: 350px){
     #about {
-        
+        min-height: 150vh;
         .about-1, .about-2 {
             .about-text {
                 width: 90%;
